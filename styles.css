@@ -664,14 +664,26 @@ General
  ================================================*/
  
  .stage {
-   bottom: 0;
-   left: 0;
+
    margin: auto;
-   position: absolute;
-   right: 0;
-   top: 0;
-   z-index: 2;
-   overflow: hidden;
+
+
+   /* overflow: hidden; */
+
+
+   /* width: 100% !important;  */
+
+   height: auto !important; 
+   aspect-ratio: 16 / 9; /* Пропорції для збереження вигляду гри */
+   /* background-color: rgba(255, 255, 255, 0.1); */
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   position: relative;
+
+
  }
  
  /*================================================
@@ -809,15 +821,8 @@ General
 }
 
 /* Стадія гри */
-.stage {
-   position: relative;
-   width: 80%;
-   max-width: 800px;
-   height: 400px;
-   background-color: rgba(255, 255, 255, 0.1);
-   border-radius: 10px;
-   margin-bottom: 20px;
-}
+
+
 
 /* Лічильник очок */
 .score {
@@ -884,10 +889,10 @@ General
       font-size: 24px;
    }
 
-   .stage {
+   /* .stage {
       height: 300px;
       width: 90%;
-   }
+   } */
 
    .icons img {
       width: 40px;
@@ -931,3 +936,7 @@ General
       font-size: 8px;
    }
 }
+
+
+
+
